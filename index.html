@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lanebreak — Your swims, explained.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img class="nav-logo-icon" src="assets/AppIcon.png" alt="Lanebreak app icon">
+        <span>Lanebreak</span>
+      </a>
+      <a href="https://forms.gle/MKEQCwERP3K2cdKC8" class="nav-cta">Join Waitlist</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">For Apple Watch swimmers</p>
+        <h1 class="hero-headline">Your swims, explained.</h1>
+        <p class="hero-sub">
+          Lanebreak analyzes your pool workouts and tells you what actually happened - your pace, fatigue, and efficiency - and what to do next.
+        </p>
+        <p class="hero-sub">Real coaching insight from the data your watch already records.</p>
+        <div class="hero-actions">
+          <a href="#features" class="btn btn-primary">Learn More</a>
+        </div>
+        <p class="hero-trust">Built by an aspiring swimmer who wanted answers after every session.</p>
+      </div>
+    </div>
+    <div class="hero-glow"></div>
+  </section>
+
+
+  <!-- PROBLEM -->
+  <section class="value-prop">
+    <div class="container">
+      <p class="section-eyebrow">Why Lanebreak exists</p>
+      <h2 class="section-headline">Swimming: the only sport you train blind.</h2>
+      <p class="section-sub">After a run, you know your pace. After lifting, you know your reps. After cycling, you know your power. After a swim, you stare at distance, average pace, and calories - and still don't know:</p>
+      <ul class="value-list problem-questions">
+        <li>Was today a good workout?</li>
+        <li>Did my endurance improve?</li>
+        <li>Why did I fall apart halfway through?</li>
+        <li>What should I do tomorrow?</li>
+      </ul>
+      <p class="value-tagline">Lanebreak was built to answer the question every swimmer asks walking out of the pool: "Did that actually help me get better?"</p>
+    </div>
+  </section>
+
+  <!-- FOUNDER STORY -->
+  <section class="value-prop">
+    <div class="container">
+      <p class="section-eyebrow">Why I built this</p>
+      <h2 class="section-headline">I wanted to improve my swims.</h2>
+      <p class="section-sub">I swim regularly. I track everything. And yet - I constantly left the pool unsure if I improved. Some days felt amazing but the numbers were bad. Some days looked good on paper but felt awful. I realized: the problem wasn't my training. The problem was the feedback.</p>
+      <ul class="value-list">
+        <li>Existing tools were too expensive</li>
+        <li>Existing tools were too technical</li>
+        <li>Or they were dashboards with no coaching</li>
+      </ul>
+      <p class="value-tagline">So I built Lanebreak - first for myself, and now for swimmers like me.</p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <p class="section-eyebrow">What Lanebreak does</p>
+      <h2 class="section-headline">Lanebreak turns swim data into coaching.</h2>
+      <p class="section-sub" style="text-align:center; margin-bottom: 40px;">Instead of raw stats, you get explanations.</p>
+      <div class="state-carousel" aria-label="Lanebreak Swim States Carousel">
+        <div class="state-carousel-head">
+          <div class="state-tabs" role="tablist" aria-label="Swim states">
+            <button class="state-tab is-active" role="tab" aria-selected="true" aria-controls="state-relaxed" id="tab-relaxed" data-state-target="relaxed">Swim</button>
+            <button class="state-tab" role="tab" aria-selected="false" aria-controls="state-restored" id="tab-restored" data-state-target="restored">Coach</button>
+          </div>
+          <div class="state-nav">
+            <button class="state-nav-btn" data-state-prev aria-label="Previous state">←</button>
+            <button class="state-nav-btn" data-state-next aria-label="Next state">→</button>
+          </div>
+        </div>
+
+        <div class="state-track-wrap">
+          <div class="state-track">
+            <article class="state-slide is-active" id="state-relaxed" role="tabpanel" aria-labelledby="tab-relaxed" data-state="relaxed">
+              <div class="state-slide-media">
+                <img src="assets/female-backstroke.jpg" alt="Meaningful insights at your fingertips">
+              </div>
+              <div class="state-slide-data">
+                <img src="assets/swim-insights.PNG" alt="Relaxed swim chart baseline image">
+                <div class="state-slide-copy">
+                  <h3>Analyze Past Swims</h3>
+                  <p> Lanebreak breaks down your workout into: </p>
+                    <ul> - pacing consistency</ul> 
+                    <ul> - fatigue patterns </ul> 
+                    <ul> - efficiency changes</ul> 
+<p>You’ll know where the workout went right — and exactly where it fell apart.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="state-slide" id="state-restored" role="tabpanel" aria-labelledby="tab-restored" data-state="restored" hidden>
+              <div class="state-slide-media">
+                <img src="assets/pool-swimmer-male.jpg" alt="Restored swimmer baseline image">
+              </div>
+              <div class="state-slide-data">
+                <img src="assets/swim-readiness.PNG" alt="Restored swim chart baseline image">
+                <div class="state-slide-copy">
+                  <h3>Know What To Do Next</h3>
+                  <p>Based on your recent workouts and fatigue patterns, the app suggests whether you should:</p>
+                  <ul> - push</ul>
+                  <ul> - hold steady</ul>
+                  <ul> - recover</ul>
+                  <p>After every session, Lanebreak suggests your next workout - not generic sets, but ones matched to what your body actually needs.</p>
+
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="state-dots" aria-hidden="true">
+          <button class="state-dot is-active" data-state-dot="0"></button>
+          <button class="state-dot" data-state-dot="1"></button>
+        </div>
+      </div>
+  </section>
+
+  <!-- PREMIUM -->
+  <section class="how-it-works" id="premium">
+    <div class="container container-narrow">
+      <p class="section-eyebrow">Premium</p>
+      <h2 class="section-headline">Personalized Training Plan</h2>
+      <p class="section-sub">Upgrade to Premium to unlock a full training plan tailored to your goals, baseline fitness, timeline, age, and physiology.</p>
+      <p class="section-sub">Instead of copying sets from the internet, you get a progression designed for you.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">+</div>
+          <div class="step-content">
+            <h4>Coming Soon: WatchOS Swim Coach</h4>
+            <p>Real-time feedback during your workout.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-number">+</div>
+          <div class="step-content">
+            <h4>Coming Soon: Dryland Training</h4>
+            <p>Strength and mobility routines designed specifically for swimmers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION -->
+  <section class="why-different">
+    <div class="container container-narrow">
+      <h2 class="section-headline">Not a swim tracker. Not a smartwatch companion.<br>A swim coach that understands your data.</h2>
+      <p class="section-sub">Lanebreak sits between a $120/month coach and a generic fitness app.</p>
+      <p class="section-sub">You already record your swims. Now you can understand them.</p>
+      <div class="two-questions">
+        <div class="big-question">
+          <span class="bq-num">01</span>
+          <p>Interpret every workout</p>
+        </div>
+        <div class="big-question">
+          <span class="bq-num">02</span>
+          <p>Train with purpose</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="social-proof">
+    <div class="container">
+      <div class="proof-cards">
+        <div class="proof-card">
+          <span class="proof-icon">🏊</span>
+          <p>Built by a swimmer who wanted answers after every session.</p>
+        </div>
+        <div class="proof-card">
+          <span class="proof-icon">⌚</span>
+          <p>Uses the data your watch already records.</p>
+        </div>
+        <div class="proof-card">
+          <span class="proof-icon">📣</span>
+          <p>For adult swimmers, triathletes, masters swimmers, returning swimmers, and data-curious athletes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" id="download">
+    <div class="container container-narrow">
+      <h2 class="cta-headline">Swim with purpose.</h2>
+      <p class="cta-sub">Stop guessing after every workout. Know what your training is doing.</p>
+      <a href="https://forms.gle/MKEQCwERP3K2cdKC8" class="btn btn-primary btn-large">
+        Join the Lanebreak waitlist
+      </a>
+      <p class="hero-trust cta-note">(early users get lifetime discounted premium)</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Lanebreak</p>
+      <p class="footer-compat">Works with Apple Watch &nbsp;•&nbsp; Syncs with Apple Health</p>
+      <div class="footer-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-use">Terms of Use</a>
+        <a href="#">Support</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Lanebreak. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scroll-animations.js"></script>
+</body>
+</html>
