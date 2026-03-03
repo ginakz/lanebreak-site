@@ -147,6 +147,23 @@ body {
 }
 .nav-cta:hover { background: var(--blue-dark); }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-light);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--blue);
+}
+
 /* ============================================================
    HERO
    ============================================================ */
@@ -1249,6 +1266,10 @@ body {
 }
 
 @media (max-width: 900px) {
+  .nav-actions {
+    gap: 10px;
+  }
+
   .hero-inner {
     padding: 84px 20px 70px;
   }
@@ -1271,4 +1292,96 @@ body {
     transform: none;
     transition: none;
   }
+}
+
+/* ============================================================
+   BLOG
+   ============================================================ */
+.blog-hero {
+  padding: 86px 0 24px;
+  background: #fbfbfd;
+}
+
+.blog-main {
+  padding: 32px 0 80px;
+  background: #fbfbfd;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.blog-card {
+  background: #fff;
+  border: 1px solid rgba(60, 60, 67, 0.16);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.blog-card h2 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.blog-card h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-card p {
+  color: var(--ink-light);
+}
+
+.blog-card-meta {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.blog-card-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 600;
+  color: var(--blue-dark);
+  text-decoration: none;
+}
+
+.blog-article {
+  background: #fff;
+  border: 1px solid rgba(60, 60, 67, 0.16);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+}
+
+.blog-article h1 {
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+}
+
+.blog-article h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+}
+
+.blog-article p {
+  color: var(--ink-light);
+  margin-bottom: 8px;
+}
+
+.blog-cta-inline {
+  background: var(--blue-light);
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 16px;
 }
